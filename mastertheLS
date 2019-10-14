@@ -1,1 +1,1 @@
-ls -tmp | sed 's/,/, /g'
+ls -tmp | sed 's/, /,/g'
