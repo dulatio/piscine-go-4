@@ -1,1 +1,1 @@
-find . -type f \( -iname 'a*' -or -iname '*z' -or -iname 'z*a!' \)
+find . -type f \( -iname 'a*' -or -iname '*z' \)
