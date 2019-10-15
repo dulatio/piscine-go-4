@@ -9,7 +9,7 @@ func PrintCombN(n int) {
 		a[i] = i
 	}
 
-	index := n - 1
+	// index := n - 1
 
 	for ; ; {
 		for _,v := range a {
