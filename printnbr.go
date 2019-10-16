@@ -7,9 +7,9 @@ func PrintNbr(n int) {
 		z01.PrintRune('-')
 		n = -n
 	}
-	var a [20]rune
+	a := [21]rune{'0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'}
 
-	for i := 19; ; i-- {
+	for i := 20; n != 0; i-- {
 		if n%10 == 0 {
 			a[i] = '0'
 		} else if n%10 == 1 {
@@ -32,17 +32,18 @@ func PrintNbr(n int) {
 			a[i] = '9'
 		}
 		n /= 10
-		if n == 0 {
-			break
-		}
 	}
 
 	index := 0
-	for index := 0; a[index] == a[0]; index++ {
+	for ; index < 21 && a[index] == '0'; index++ {
 
 	}
 
-	for ; index < 20; index++ {
+	if index == 21 {
+		index--
+	}
+
+	for ; index < 21; index++ {
 		z01.PrintRune(a[index])
 	}
 
