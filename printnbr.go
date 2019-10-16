@@ -2,7 +2,7 @@ package piscine
 
 import "github.com/01-edu/z01"
 
-func PrintNbr(n int) {
+func PrintNbr(n int32) {
 	if n < 0 {
 		z01.PrintRune('-')
 		n = -n
