@@ -23,7 +23,9 @@ func PrintNbr(n int) {
 	}
 
 	for ; index < 20; index++ {
-		z01.PrintRune(rune(a[index]))
+		var r rune
+		r = a[index]
+		z01.PrintRune(r)
 	}
 
 	z01.PrintRune(10)
