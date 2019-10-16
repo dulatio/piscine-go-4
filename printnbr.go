@@ -7,10 +7,10 @@ func PrintNbr(n int) {
 		z01.PrintRune('-')
 		n = -n
 	}
-	var a [20]rune
+	var a [20]int
 
 	for i := 19; ; i-- {
-		a[i] = rune(n%10 + 48)
+		a[i] = n%10 + 48
 		n /= 10
 		if n == 0 {
 			break
@@ -23,7 +23,7 @@ func PrintNbr(n int) {
 	}
 
 	for ; index < 20; index++ {
-		z01.PrintRune(a[index])
+		z01.PrintRune(rune(a[index]))
 	}
 
 	z01.PrintRune(10)
