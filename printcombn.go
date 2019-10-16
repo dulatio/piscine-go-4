@@ -31,7 +31,7 @@ func PrintCombN(n int) {
 		a[i] = i + 48
 	}
 	var index int32
-	index = n32 - 1 
+	index = n32 - 1
 	for {
 		for i = 0; i < n32; i++ {
 			z01.PrintRune(a[i])
@@ -42,7 +42,7 @@ func PrintCombN(n int) {
 		z01.PrintRune(',')
 		z01.PrintRune(' ')
 		a[index]++
-		if a[index] == (48+10-n32+index)+1 {		
+		if a[index] == (48+10-n32+index)+1 {
 			for ; index >= 0 && a[index] >= (48+10-n32+index); index-- {
 			}
 			a[index]++
