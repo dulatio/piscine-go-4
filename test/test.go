@@ -4,5 +4,5 @@ import piscine ".."
 
 
 func main(){
-	piscine.PrintNbr(-92233)
+	piscine.PrintNbr(-9223372036854775808)
 }

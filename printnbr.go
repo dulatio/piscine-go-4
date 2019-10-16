@@ -3,9 +3,15 @@ package piscine
 import "github.com/01-edu/z01"
 
 func PrintNbr(n int) {
+	flag := false
 	if n < 0 {
 		z01.PrintRune('-')
-		n = -n
+		if n == -9223372036854775808 {
+			n = 922337203685477807
+			flag = true
+		} else {
+			n = -n
+		}
 	}
 	a := [21]rune{'0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'}
 
@@ -44,8 +50,10 @@ func PrintNbr(n int) {
 	}
 
 	for ; index < 21; index++ {
-		z01.PrintRune(a[index])
+		if flag == true && index == 20 {
+			z01.PrintRune('8')
+		} else {
+			z01.PrintRune(a[index])
+		}
 	}
-
-	//z01.PrintRune(10)
 }
