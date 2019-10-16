@@ -7,7 +7,7 @@ func PrintNbr(n int) {
 	if n < 0 {
 		z01.PrintRune('-')
 		if n == -9223372036854775808 {
-			n = 922337203685477807
+			n = 9223372036854775807
 			flag = true
 		} else {
 			n = -n
