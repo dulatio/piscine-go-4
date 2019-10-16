@@ -2,17 +2,18 @@ package piscine
 
 import "github.com/01-edu/z01"
 
-func PrintNbr(n int32) {
-	if n < 0 {
+func PrintNbr(n int) {
+	nn = int32(n)
+	if nn < 0 {
 		z01.PrintRune('-')
-		n = -n
+		nn = -nn
 	}
 	var a [20]int32
 
 	for i := 19; ; i-- {
-		a[i] = n%10 + 48
-		n /= 10
-		if n == 0 {
+		a[i] = nn%10 + 48
+		nn /= 10
+		if nn == 0 {
 			break
 		}
 	}
