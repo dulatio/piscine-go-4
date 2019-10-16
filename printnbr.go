@@ -3,17 +3,36 @@ package piscine
 import "github.com/01-edu/z01"
 
 func PrintNbr(n int) {
-	nn = int32(n)
-	if nn < 0 {
+	if n < 0 {
 		z01.PrintRune('-')
-		nn = -nn
+		n = -n
 	}
-	var a [20]int32
+	var a [20]rune
 
 	for i := 19; ; i-- {
-		a[i] = nn%10 + 48
-		nn /= 10
-		if nn == 0 {
+		if n%10 == 0 {
+			a[i] = '0'
+		} else if n%10 == 1 {
+			a[i] = '1'
+		} else if n%10 == 2 {
+			a[i] = '2'
+		} else if n%10 == 3 {
+			a[i] = '3'
+		} else if n%10 == 4 {
+			a[i] = '4'
+		} else if n%10 == 5 {
+			a[i] = '5'
+		} else if n%10 == 6 {
+			a[i] = '6'
+		} else if n%10 == 7 {
+			a[i] = '7'
+		} else if n%10 == 8 {
+			a[i] = '8'
+		} else if n%10 == 9 {
+			a[i] = '9'
+		}
+		n /= 10
+		if n == 0 {
 			break
 		}
 	}
