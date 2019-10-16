@@ -10,7 +10,7 @@ func PrintNbr(n int) {
 	var a [20]rune
 
 	for i := 19; ; i-- {
-		a[i] = rune(n % 10 + 48)
+		a[i] = rune(n%10 + 48)
 		n /= 10
 		if n == 0 {
 			break
