@@ -5,7 +5,7 @@ import "github.com/01-edu/z01"
 func PrintCombN(n int) {
 	var n32 int32
 	a := [...]rune{48, 48, 48, 48, 48, 48, 48, 48, 48, 48}
-       if n == 1 {
+	if n == 1 {
 		n32 = 1
 	} else if n == 2 {
 		n32 = 2
@@ -43,10 +43,11 @@ func PrintCombN(n int) {
 		z01.PrintRune(' ')
 		a[index]++
 		if a[index] == (48+10-n32+index)+1 {		
-			for ; index >= 0 && a[index] >= (48+10-n32+index); index-- {}
+			for ; index >= 0 && a[index] >= (48+10-n32+index); index-- {
+			}
 			a[index]++
 			for index = index + 1; index < n32; index++ {
-				a[index] = a[index-1]+1
+				a[index] = a[index-1] + 1
 			}
 			index = n32 - 1
 		}
