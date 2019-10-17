@@ -6,10 +6,10 @@ import (
 )
 
 func main(){
-	str := "Hello!"
-	str1 := "W"
-	str2 := "Héllo!"
-	fmt.Println(piscine.StrLen(str))
-	fmt.Println(piscine.StrLen(str1))
-	fmt.Println(piscine.StrLen(str2))
+	str := "1"
+	str1 := "12"
+	str2 := "6431"
+	fmt.Println(piscine.BasicAtoi(str))
+	fmt.Println(piscine.BasicAtoi(str1))
+	fmt.Println(piscine.BasicAtoi(str2))
 }
