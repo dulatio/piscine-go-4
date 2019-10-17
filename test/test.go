@@ -6,7 +6,12 @@ import (
 )
 
 func main(){
-	s := []int{-12,-124,24,4}
-	piscine.SortIntegerTable(s)
-	fmt.Println(s)
+	fmt.Println(piscine.IsPrime(5))
+	fmt.Println(piscine.IsPrime(4))
+	fmt.Println(piscine.IsPrime(0))
+	fmt.Println(piscine.IsPrime(1))
+	fmt.Println(piscine.IsPrime(183))
+	fmt.Println(piscine.IsPrime(181))
+	fmt.Println(piscine.IsPrime(177))
+	fmt.Println(piscine.IsPrime(173))
 }
