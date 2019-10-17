@@ -1,34 +1,35 @@
 package piscine
 
-func a() {
-	print(1)
-}
-/*
 import "github.com/01-edu/z01"
 
 func EightQueens() {
 	board := [...]int{-1, -1, -1, -1, -1, -1, -1, -1}
-
+	_ = board //extra
 }
 
-func recursiveThing(board []int, int col) {
+func recursiveThing(board []int, col int) bool {
 	if col == 8 {
 		printSolution(board)
-		return
+		return false
 	}
 	flag := false
 	for row := 0; row < 8; row++ {
-		if canBe(board, row, col) {
+		board[col] = row
+		if canBe(board, col) {
 			board[col] = row
 			flag = recursiveThing(board, col + 1) || flag
 		}
 	}
+	return false // extra
 }
 
-func canBe(board []int, row int, col int) bool {
-	for i := 0; i < row; i++ {
-		
+func canBe(board []int, col int) bool {
+	for i := 0; i < col; i++ {
+		if board[i] == board[col] {
+			return false
+		}
 	}
+	return false // extra
 }
 
 func printSolution(board []int) {
@@ -52,4 +53,4 @@ func printSolution(board []int) {
 		}
 	}
 	z01.PrintRune(10)
-}*/
+}
