@@ -1,11 +1,15 @@
 package main
 
-import piscine ".."
-
+import (
+	"fmt"
+	piscine ".."
+)
 
 func main(){
-	piscine.PrintCombN(1)
-	piscine.PrintCombN(2)
-	piscine.PrintCombN(3)
-	piscine.PrintCombN(6)
+	str := "Hello!"
+	str1 := "W"
+	str2 := "Héllo!"
+	fmt.Println(piscine.StrLen(str))
+	fmt.Println(piscine.StrLen(str1))
+	fmt.Println(piscine.StrLen(str2))
 }
