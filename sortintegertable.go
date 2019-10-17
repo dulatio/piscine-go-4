@@ -8,6 +8,6 @@ func SortIntegerTable(table []int) {
 				table[j] = table[j+1]
 				table[j+1] = temp
 			}
-		}
+		s}
 	}
 }
