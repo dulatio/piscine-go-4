@@ -24,7 +24,7 @@ func BasicAtoi(s string) int {
 			res += 8
 		} else if r == 57 {
 			res += 9
-		}				
+		}
 	}
 	return res
 }
