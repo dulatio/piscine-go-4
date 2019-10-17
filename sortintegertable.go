@@ -9,6 +9,4 @@ func SortIntegerTable(table []int) {
 				table[j+1] = temp
 			}
 		}
-	}
-
-}
+	}}
