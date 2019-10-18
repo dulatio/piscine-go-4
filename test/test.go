@@ -2,11 +2,15 @@ package main
 
 import (
 	"fmt"
-	piscine ".."
+	raid1 "../raid1"
 )
 
 func main(){
-	fmt.Println(piscine.Index("Hello!", "l"))
-	fmt.Println(piscine.Index("汉字",  "字"))
-	fmt.Println(piscine.Index("á, é, í, ó, ú, ü, ñ", "!!!"))
+	raid1.Raid1c(5,3)
+	raid1.Raid1c(5,1)
+	raid1.Raid1c(1,5)
+	raid1.Raid1c(0,3)
+	raid1.Raid1c(1,1)
+	raid1.Raid1c(2,2)
+	fmt.Println()
 }
