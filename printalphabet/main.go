@@ -9,5 +9,5 @@ func main() {
 	r := 'a'
 	s := string(r)
 	_ = s
-	z01.PrintRune('\n')
+	z01.PrintRune(10)
 }
