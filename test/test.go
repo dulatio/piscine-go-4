@@ -2,15 +2,11 @@ package main
 
 import (
 	"fmt"
-	raid1 "../raid1"
+	piscine ".."
 )
 
 func main(){
-	raid1.Raid1e(5,3)
-	raid1.Raid1e(5,1)
-	raid1.Raid1e(1,5)
-	raid1.Raid1e(0,3)
-	raid1.Raid1e(1,1)
-	raid1.Raid1e(2,2)
-	fmt.Println()
+	fmt.Println(piscine.ToLower("Hello!"))
+	//fmt.Println(piscine.Compare("Salut!", "lut!"))
+	//fmt.Println(piscine.Compare("Ola!", "Ol"))
 }
