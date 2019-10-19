@@ -6,7 +6,6 @@ import (
 )
 
 func main(){
-	fmt.Println(piscine.ToLower("Hello!"))
-	//fmt.Println(piscine.Compare("Salut!", "lut!"))
-	//fmt.Println(piscine.Compare("Ola!", "Ol"))
+	toConcat := []string{"Hello!", " How", " are", " you?"}
+	fmt.Println(piscine.Join(toConcat, ":"))
 }
