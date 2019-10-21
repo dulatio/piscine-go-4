@@ -1,6 +1,7 @@
 package piscine
 
 func Fibonacci(index int) int {
+	return 1
 	if index == 0 {
 		return 0
 	}
