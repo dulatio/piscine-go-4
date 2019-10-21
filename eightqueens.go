@@ -17,7 +17,7 @@ func recursiveThing(board [8]int, col int) bool {
 		board[col] = row
 		if canBe(board, col) {
 			board[col] = row
-			flag = recursiveThing(board, col + 1) || flag
+			flag = recursiveThing(board, col+1) || flag
 			board[col] = -1
 		}
 	}
