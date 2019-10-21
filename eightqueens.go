@@ -4,10 +4,10 @@ import "github.com/01-edu/z01"
 
 func EightQueens() {
 	board := [...]int{-1, -1, -1, -1, -1, -1, -1, -1}
-	_ = board //extra
+	recursiveThing(board, 0)
 }
 
-func recursiveThing(board []int, col int) bool {
+func recursiveThing(board [8]int, col int) bool {
 	if col == 8 {
 		printSolution(board)
 		return false
@@ -18,21 +18,25 @@ func recursiveThing(board []int, col int) bool {
 		if canBe(board, col) {
 			board[col] = row
 			flag = recursiveThing(board, col + 1) || flag
+			board[col] = -1
 		}
 	}
-	return false // extra
+	return flag
 }
 
-func canBe(board []int, col int) bool {
+func canBe(board [8]int, col int) bool {
 	for i := 0; i < col; i++ {
 		if board[i] == board[col] {
 			return false
 		}
+		if (col-i == board[col]-board[i]) || (col-i == board[i]-board[col]) {
+			return false
+		}
 	}
-	return false // extra
+	return true
 }
 
-func printSolution(board []int) {
+func printSolution(board [8]int) {
 	for i := 0; i < 8; i++ {
 		if board[i] == 0 {
 			z01.PrintRune('1')
