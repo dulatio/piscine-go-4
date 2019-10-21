@@ -12,7 +12,7 @@ func FindNextPrime(nb int) int {
 			nb -= 2
 		}
 	} else {
-		if nb%2 == 0 {
+		if nb%2 == 0 && nb > 3 {
 			nb++
 		}
 		for {
