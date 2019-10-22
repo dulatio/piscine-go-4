@@ -15,7 +15,7 @@ func Index(s string, toFind string) int {
 	}
 	for i := 0; i < count1; i++ {
 		j, k := i, 0
-		for ; j < count1 && k < count2; {
+		for j < count1 && k < count2 {
 			if ar1[j] != ar2[k] {
 				break
 			}
