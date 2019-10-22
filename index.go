@@ -6,7 +6,7 @@ func Index(s string, toFind string) int {
 	for _, r := range s {
 		index++
 		if r == rtofind {
-			return index;
+			return index
 		}
 	}
 	return -1
@@ -16,5 +16,5 @@ func firstRune(s string) rune {
 	for _, r := range s {
 		return r
 	}
-	return '0'
+	return '\x00'
 }
