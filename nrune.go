@@ -8,5 +8,5 @@ func NRune(s string, n int) rune {
 			return r
 		}
 	}
-	return '0'
+	return '\x00'
 }
