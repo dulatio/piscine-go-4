@@ -11,8 +11,6 @@ func Capitalize(s string) string {
 			} else if (r >= '0' && r <= '9') || (r >= 'A' && r <= 'Z') {
 				res += string(r)
 				flag = false
-			} else if r == ' ' || r == '\t' {
-				res += string(r)
 			} else {
 				res += string(r)
 				flag = true
@@ -21,8 +19,6 @@ func Capitalize(s string) string {
 			if r >= 'A' && r <= 'Z' {
 				res += string(r - ('A' - 'a'))
 			} else if (r >= '0' && r <= '9') || (r >= 'a' && r <= 'z') {
-				res += string(r)
-			} else if r == ' ' || r == '\t' {
 				res += string(r)
 			} else {
 				res += string(r)

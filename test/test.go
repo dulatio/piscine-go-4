@@ -6,7 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Println(piscine.Index("Hello!", "l"))
-	fmt.Println(piscine.Index("Salut!", "alu"))
-	fmt.Println(piscine.Index("Ola!", "hOl"))
+	fmt.Println(piscine.Capitalize("Hello! How are you? How+are+things+4you?"))
 }
