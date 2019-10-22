@@ -32,10 +32,13 @@ func PrintNbrBase(nbr int, base string) {
 	ra := []rune(base)
 	if nbr < 0 {
 		z01.PrintRune('-')
-		nbr = -nbr
 	}
-	for ; nbr > 0; nbr /= counter {
-		res = string(ra[nbr%counter]) + res
+	for ; nbr != 0; nbr /= counter {
+		index := nbr % counter
+		if index < 0 {
+			index = -index
+		}
+		res = string(ra[index]) + res
 	}
 	for _, r := range res {
 		z01.PrintRune(r)
