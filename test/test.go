@@ -1,23 +1,15 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
+	"fmt"
 	piscine ".."
 )
 
 func main() {
-	piscine.PrintNbrBase(125, "012345678")
-	z01.PrintRune('\n')
-	piscine.PrintNbrBase(-125, "01")
-	z01.PrintRune('\n')
-	piscine.PrintNbrBase(125, "0123456789ABCDEFghij")
-	z01.PrintRune('\n')
-	piscine.PrintNbrBase(-125, "ch")
-	z01.PrintRune('\n')
-	piscine.PrintNbrBase(125, "awert-q")
-	z01.PrintRune('\n')
-	//piscine.PrintNbrBase2(-9223372036854775808, "0123456789")
-	//z01.PrintRune('\n')
-	piscine.PrintNbrBase(-9223372036854775808, "0123456789")
-	z01.PrintRune('\n')
+	fmt.Println(piscine.AtoiBase("125", "0123456789"))
+	fmt.Println(piscine.AtoiBase("1111101", "01"))
+	fmt.Println(piscine.AtoiBase("7D", "0123456789ABCDEF"))
+	fmt.Println(piscine.AtoiBase("uoi", "choumi"))
+	fmt.Println(piscine.AtoiBase("bbbbbab", "-ab"))
+	fmt.Println(piscine.AtoiBase("9223372036854775807", "0123456789"))
 }
