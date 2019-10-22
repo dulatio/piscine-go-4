@@ -8,8 +8,8 @@ func PrintNbrBase(nbr int, base string) {
 		flag := 0
 		if r1 == '+' || r1 == '-' {
 			z01.PrintRune('N')
-				z01.PrintRune('V')
-				return
+			z01.PrintRune('V')
+			return
 		}
 		for _, r2 := range base {
 			if r1 == r2 {
