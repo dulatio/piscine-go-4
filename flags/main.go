@@ -8,11 +8,11 @@ import (
 func main() {
 	if stringsLen(os.Args) < 2 {
 		fmt.Println("--insert")
-		fmt.Println("\t-i")
-		fmt.Println("\t\tThis flag inserts the string into the string passed as argument.")
+		fmt.Println("  -i")
+		fmt.Println("\t This flag inserts the string into the string passed as argument.")
 		fmt.Println("--order")
-		fmt.Println("\t-o")
-		fmt.Println("\t\tThis flag will behave like a boolean, if it is called it will order the argument.")
+		fmt.Println("  -o")
+		fmt.Println("\t This flag will behave like a boolean, if it is called it will order the argument.")
 		return
 	}
 	toinsert := ""
@@ -27,11 +27,11 @@ func main() {
 			order = true
 		} else if v == "-h" || v == "--help" {
 			fmt.Println("--insert")
-			fmt.Println("\t-i")
-			fmt.Println("\t\tThis flag inserts the string into the string passed as argument.")
+			fmt.Println("  -i")
+			fmt.Println("\t This flag inserts the string into the string passed as argument.")
 			fmt.Println("--order")
-			fmt.Println("\t-o")
-			fmt.Println("\t\tThis flag will behave like a boolean, if it is called it will order the argument.")
+			fmt.Println("  -o")
+			fmt.Println("\t This flag will behave like a boolean, if it is called it will order the argument.")
 			return
 		} else {
 			s = v
