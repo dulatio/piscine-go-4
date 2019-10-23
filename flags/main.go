@@ -19,9 +19,9 @@ func main() {
 	order := false
 	s := ""
 	for _, v := range os.Args {
-		if len(v) > 9 && v[:9] == "--insert=" {
+		if strLen(v) > 9 && v[:9] == "--insert=" {
 			toinsert = v[9:]
-		} else if len(v) > 2 && v[:3] == "-i=" {
+		} else if strLen(v) > 2 && v[:3] == "-i=" {
 			toinsert = v[3:]
 		} else if v == "--order" || v == "-o" {
 			order = true
@@ -40,8 +40,8 @@ func main() {
 	s += toinsert
 	if order {
 		runes := []rune(s)
-		for i := 0; i < len(runes); i++ {
-			for j := 0; j < len(runes)-1-i; j++ {
+		for i := 0; i < runesLen(runes); i++ {
+			for j := 0; j < runesLen(runes)-1-i; j++ {
 				if runes[j] > runes[j+1] {
 					runes[j], runes[j+1] = runes[j+1], runes[j]
 				}
@@ -50,4 +50,22 @@ func main() {
 		s = string(runes)
 	}
 	fmt.Println(s)
+}
+
+func strLen(s string) int {
+	counter := 0
+	for _, r := range s {
+		counter++
+		_ = r
+	}
+	return counter
+}
+
+func runesLen(a []rune) int {
+	counter := 0
+	for _, r := range a {
+		counter++
+		_ = r
+	}
+	return counter
 }
