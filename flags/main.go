@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	if len(os.Args) < 2 {
+	if stringsLen(os.Args) < 2 {
 		fmt.Println("--insert")
 		fmt.Println("\t-i")
 		fmt.Println("\t\tThis flag inserts the string into the string passed as argument.")
@@ -62,6 +62,15 @@ func strLen(s string) int {
 }
 
 func runesLen(a []rune) int {
+	counter := 0
+	for _, r := range a {
+		counter++
+		_ = r
+	}
+	return counter
+}
+
+func stringsLen(a []string) int {
 	counter := 0
 	for _, r := range a {
 		counter++
