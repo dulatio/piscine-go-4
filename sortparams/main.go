@@ -7,7 +7,7 @@ import (
 
 func main() {
 	counter := 0
-	for i, _ := range os.Args {
+	for i, := range os.Args {
 		counter++
 		_ = i
 	}
