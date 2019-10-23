@@ -25,6 +25,7 @@ func main() {
 			z01.PrintRune(' ')
 		}
 	}
+	z01.PrintRune(10)
 }
 
 func strToNbr(s string) int {
