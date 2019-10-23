@@ -13,7 +13,6 @@ func main() {
 		}
 		if i == 1 && v == "--upper" {
 			upper = true
-			continue
 		}
 		if strToNbr(v) >= 1 && strToNbr(v) <= 26 {
 			if upper {
