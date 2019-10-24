@@ -6,12 +6,9 @@ import (
 )
 
 func main() {
-	tab1 := []int{0, 1, 2, 3, 4, 5}
-	tab2 := []int{0, 2, 1, 3}
 
-	result1 := piscine.IsSorted(piscine.CompareInts, tab1)
-	result2 := piscine.IsSorted(piscine.CompareInts, tab2)
+	result := []string{"a", "A", "1", "b", "B", "2", "c", "C", "3"}
+	piscine.SortWordArr(result)
 
-	fmt.Println(result1)
-	fmt.Println(result2)
+	fmt.Println(result)
 }
