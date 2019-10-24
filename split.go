@@ -1,5 +1,5 @@
 package piscine
-
+/*
 func Split(str, charset string) []string {
 	counter := 0
 	runes = make([]rune, StrLen(str))
@@ -12,4 +12,4 @@ func Split(str, charset string) []string {
 			
 		}
 	}
-}
+}*/
