@@ -6,6 +6,7 @@ import (
 )
 
 func main() {
-	str := "HelloHAhowHAareHAyou?"
-	fmt.Println(piscine.Split(str, "H"))
+	arr := []int{1, 2, 3, 4, 5, 6}
+	result := piscine.Map(piscine.IsPrime, arr)
+	fmt.Println(result)
 }
