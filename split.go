@@ -6,7 +6,7 @@ func Split(str, charset string) []string {
 	res := ""
 	words := make([]string, StrLen(str))
 	for i < StrLen(str) {
-		if j == StrLen(charset){
+		if j == StrLen(charset) {
 			words[index] = res[:StrLen(res)-StrLen(charset)]
 			index++
 			res = ""
