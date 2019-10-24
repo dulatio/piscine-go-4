@@ -7,7 +7,7 @@ func SplitWhiteSpaces(str string) []string {
 			counter++
 		}
 	}
-	a := make([]string, counter + 2)
+	a := make([]string, counter+2)
 	word := ""
 	index := 0
 	for _, r := range str {
