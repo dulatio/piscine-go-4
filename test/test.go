@@ -6,6 +6,7 @@ import (
 )
 
 func main() {
-	result := piscine.ConvertBase("9223372036854775807", "0123456789", "01")
-	fmt.Println(result)
+	fmt.Println(piscine.AppendRange(5, 10))
+	fmt.Println(piscine.AppendRange(10, 5))
 }
+
